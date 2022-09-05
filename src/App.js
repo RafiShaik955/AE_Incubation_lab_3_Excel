@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Excel from "./components/Excel"
+// import DataRows from './components/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home"
+import useSearchSheets from './components/useSearchSheets'
 
 function App() {
+  const noOfRows = 20;
+  const sheets = useSearchSheets();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+            {sheets.map((each_sheet,index)=>{
+              return <Route key={index} path= {`${each_sheet}`} element ={<Excel />} />
+            })}
+            <Route path="/" element ={<Home />} />
+            <Route path="/newSheet" element={<Excel />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

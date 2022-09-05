@@ -1,0 +1,156 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainHeader{
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+/* .sheetIcon{
+    border:2px solid green;
+
+}*/
+
+.sheet{
+    font-size: 50px;
+    color:green;
+    cursor: pointer;
+    /* background-color: green; */
+}
+.containerPart{
+    /* border: 2px solid black; */
+    margin-top: -10px;
+    padding: 10px;
+    width: 1300px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upperPart{
+    /* border: 2px solid violet; */
+    width: 300px;
+    display: flex;
+    margin-left: 8px;
+    /* justify-content: space-between; */
+}
+
+.fileNameText{
+    border: none;
+    /* padding: 0px; */
+    width: 175px;
+    /* text-align: center; */
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: blue;
+}
+
+.fileNameText:hover{
+    border:1px solid grey;
+}
+
+.fileNameText:focus{
+    border: 2px solid blue;
+    border-radius: 5px;
+
+}
+
+
+
+.inputSpan{
+    border:2px solid blue;
+    border-radius: 5px;
+    
+}
+
+
+
+.downloadPart{
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 100px; */
+    /* border:2px solid black; */
+    text-align: center;
+    margin-left:40px;
+    cursor: pointer;
+} 
+.downloadPart button{
+    width: 80px;
+    margin-left: 4px;
+    margin-top: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border:none;
+
+}
+
+.downloadPart button:hover{
+    border: 2px solid green;
+}
+
+.download{
+    font-size: 20px;
+}
+
+.lowerPart{
+    /* border: 2px solid blue; */
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.lowerPart span{
+    /* background-color: lightcyan; */
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+.lowerPart span:hover{
+    /* padding: 10px; */
+    cursor: pointer;
+    background-color: rgba(219, 213, 213, 0.397);
+}
+
+.lowerPart small{
+    margin-right: -20px;
+    padding-right: -30px;
+    text-decoration: underline;
+    margin-top: 2px;
+    /* cursor: pointer; */
+}
+
+
+
+.lowerHeader{
+    margin-top: -12px;
+    margin-bottom: 2px;
+    /* border: 2px solid red; */
+    width:100%;
+    display: flex;
+    padding-top: 2px;
+    border-top: 1px solid grey;
+}
+
+.firstInput{
+    width: 80px;
+    height: 25px;
+    /* border: none; */
+    background-color: transparent;
+    /* resize: none; */
+    text-align: center;
+    outline: none;
+    border: 1px solid grey;
+}
+.secondInput{
+    width:100%;
+    margin-left:1px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid grey;
+}

@@ -1,5 +1,6 @@
-body {
+/* body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,41 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+.ag-theme-alpine .ag-header {
+  --ag-background-color: #white;
+  /* --ag-alpine-selection-border-color: red;
+  --ag-input-focus-border-color:red; */
+  --ag-input-focus-border-color: green;
+  --ag-alpine-active-color: green;
+  
+  /* --ag-borders:1px solid; */
+    /* font-family: cursive; */
+  text-align: center;
+  
+}
+
+
+.ag-theme-alpine .ag-cell{
+  border: 1px solid rgb(196, 192, 192);
+  /* margin:-px; */
+
+}
+
+.ag-header-cell-label {
+  width: 30px;
+  justify-content: center;
+}
+/* .ag-header-cell-resize{
+  height: 100%;
+  color: red;
+} */
+.ag-header-cell-label {
+  /* Necessary to allow for text to grow vertically */
+  height: 100%;
+  padding: 0 !important;
+}
+
+.ag-theme-acmecorp {
+  --ag-odd-row-background-color: #white;
 }

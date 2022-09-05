@@ -1,6 +1,12 @@
-.App {
-  text-align: center;
+.body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+/* .App {
+  text-align: center;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +41,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* .searchCell{
+  background-color: red;
+} */
+
+
+.searchHeader{
+  /* background-color: blue; */
+  position:fixed;
+  display: flex;
+  /* width: 100%; */
+  top:0;
+  right: 0;
+  margin:15px;
+  margin-right: 30px;
+}
+
+.searchHeader input{
+  border: 2px solid green;
+  border-radius: 5px;
+  text-align: center;
+  padding: 12px;
+  width: 150px;
+  font-size: 15px;
+}
+
+.searchHeader input:focus {
+  width: 300px;
+  border:3px solid green;
+  outline: none;
 }
